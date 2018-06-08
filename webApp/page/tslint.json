@@ -1,0 +1,26 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules":{
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "any ",
+        "named-imports-order": "any"
+      }
+    ],
+    "object-literal-sort-keys": [
+      true,
+      "ignore-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  }
+}
